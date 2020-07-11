@@ -5,7 +5,7 @@ root.title("simplecalculater")
 root.geometry("227x275")
 
 # entry
-
+# font using Digital-7 
 entry1= Entry(root, width=15 , font=('Digital-7',20) ,borderwidth=15 ,bg="grey" ,fg="darkblue")
 entry1.grid(row=0,column=0,columnspan=4)
 
@@ -59,7 +59,7 @@ def btn_equal():
     num2=entry1.get()
     entry1.delete(0, END) 
 
-    # if/Else statement
+# if/Else statement
     if fun == "addition":
         if "." in num2:
             n2=float(num2)
