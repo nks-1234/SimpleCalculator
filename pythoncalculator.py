@@ -5,7 +5,7 @@ root.title("simplecalculater")
 root.geometry("227x275")
 
 # entry
-# font using Digital-7 
+
 entry1= Entry(root, width=15 , font=('Digital-7',20) ,borderwidth=15 ,bg="grey" ,fg="darkblue")
 entry1.grid(row=0,column=0,columnspan=4)
 
@@ -59,7 +59,7 @@ def btn_equal():
     num2=entry1.get()
     entry1.delete(0, END) 
 
-# if/Else statement
+    # if/Else statement
     if fun == "addition":
         if "." in num2:
             n2=float(num2)
@@ -67,13 +67,18 @@ def btn_equal():
             entry1.delete(0, END)
             entry1.insert(0,(n3) + (n2))
             
-        
-        if "." in n1:
+        elif "." in n1:
             n2=float(num2)
             n3=float(n1)
             entry1.delete(0, END)
             entry1.insert(0,(n3) + (n2))
-            
+        try:
+            n2=int(num2)
+            n3=int(n1)
+        
+        except:
+            print("no error")
+        
         else:
             n2=int(num2)
             n3=int(n1)
@@ -87,11 +92,18 @@ def btn_equal():
             entry1.delete(0, END)
             entry1.insert(0,(n5) - (n4))
             
-        if "." in num3:
+        elif "." in num3:
             n4=float(num2)
             n5=float(num3)
             entry1.delete(0, END)
             entry1.insert(0,(n5) - (n4))
+        
+        try:
+            n4=int(num2)
+            n5=int(n1)
+        
+        except:
+            print("no error")
             
         else:
             n4=int(num2)
@@ -107,12 +119,19 @@ def btn_equal():
             entry1.delete(0, END)
             entry1.insert(0,(n7) / (n6))
             
-        if "." in num4:
+        elif "." in num4:
             n6=float(num2)
             n7=float(num4)
             entry1.delete(0, END)
             entry1.insert(0,(n7) / (n6))
             
+        try:
+            n6=int(num2)
+            n7=int(n1)
+        
+        except:
+            print("no error")
+        
         else:
             n6=int(num2)
             n7=int(num4)
@@ -128,12 +147,19 @@ def btn_equal():
             entry1.insert(0,(n9) * (n8))
             
         
-        if "." in num5:
+        elif "." in num5:
             n8=float(num2)
             n9=float(num5)
             entry1.delete(0, END)
             entry1.insert(0,(n9) * (n8))
-            
+         
+        try:
+            n8=int(num2)
+            n9=int(n1)
+        
+        except:
+            print("no error")
+        
         else:
             n8=int(num2)
             n9=int(num5)
