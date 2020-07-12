@@ -77,7 +77,7 @@ def btn_equal():
             n3=int(n1)
         
         except:
-            print("no error")
+            print("")
         
         else:
             n2=int(num2)
@@ -100,10 +100,10 @@ def btn_equal():
         
         try:
             n4=int(num2)
-            n5=int(n1)
+            n5=int(num3)
         
         except:
-            print("no error")
+            print("")
             
         else:
             n4=int(num2)
@@ -127,10 +127,10 @@ def btn_equal():
             
         try:
             n6=int(num2)
-            n7=int(n1)
+            n7=int(num4)
         
         except:
-            print("no error")
+            print("")
         
         else:
             n6=int(num2)
@@ -155,10 +155,10 @@ def btn_equal():
          
         try:
             n8=int(num2)
-            n9=int(n1)
+            n9=int(num5)
         
         except:
-            print("no error")
+            print("")
         
         else:
             n8=int(num2)
